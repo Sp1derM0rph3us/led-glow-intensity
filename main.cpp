@@ -17,7 +17,7 @@ void loop()
   if (Serial.available() > 0) {	// If the value of "value" variable is bigger than zero
     value = Serial.parseInt();
     if(value <= 255) {		// Checks if the value of it isn't bigger than 255
-      analogWrite(led, value);		// Write the value "to" the LED
+      analogWrite(led, value);		// Writes the value "to" the LED
       Serial.println(String("LED power: ") + value);	// Outputs LED's power
     }
     else{   // What happens if the value is bigger than 255
