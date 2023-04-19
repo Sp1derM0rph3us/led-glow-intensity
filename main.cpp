@@ -20,7 +20,7 @@ void loop()
       analogWrite(led, value);		// Write the value "to" the LED
       Serial.println(String("LED power: ") + value);	// Outputs LED's power
     }
-    else{   // Treating what happens if the value is bigger than 255
+    else{   // What happens if the value is bigger than 255
       analogWrite(led, 0);
       Serial.println(String("You've inserted a value bigger than the allowed, setting LED's power to 0."));
     }
